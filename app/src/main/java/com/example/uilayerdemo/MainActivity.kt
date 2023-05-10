@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.uilayerdemo.ui.theme.UILayerDemoTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,3 +29,11 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+@Composable
+fun MainScreen(
+    modifier: Modifier = Modifier,
+    counterViewModel: CounterViewModel = viewModel()
+){
+
+}
